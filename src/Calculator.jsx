@@ -20,7 +20,7 @@ function Calculator(){
     }
 
     function operation(e){
-        setA(parseInt(document.getElementsByClassName('result')[0].value));
+        setA(parseFloat(document.getElementsByClassName('result')[0].value));
         setOper(e.target.innerText);
         document.getElementsByClassName('result')[0].value = '';
 
@@ -30,7 +30,7 @@ function Calculator(){
     }
 
     function percent(){
-        const num = parseInt(document.getElementsByClassName('result')[0].value);
+        const num = parseFloat(document.getElementsByClassName('result')[0].value);
         const result  = num/100;
         document.getElementsByClassName('result')[0].value = result;
         setIsEqual(true);
@@ -40,7 +40,7 @@ function Calculator(){
     }
 
     function equals(){
-           const b=parseInt(document.getElementsByClassName('result')[0].value);
+           const b=parseFloat(document.getElementsByClassName('result')[0].value);
            switch (oper) {
             case '+':
                 document.getElementsByClassName('result')[0].value = a+b;
@@ -99,7 +99,7 @@ function Calculator(){
             <div>
                 <button className="number" onClick={addNumber}>00</button>
                 <button className="number" onClick={addNumber}>0</button>
-                <button className="">.</button>
+                <button className="" onClick={addNumber}>.</button>
                 <button className="" onClick={equals}>=</button>
             </div>
             
