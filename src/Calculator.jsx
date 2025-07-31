@@ -29,6 +29,16 @@ function Calculator(){
 
     }
 
+    function percent(){
+        const num = parseInt(document.getElementsByClassName('result')[0].value);
+        const result  = num/100;
+        document.getElementsByClassName('result')[0].value = result;
+        setIsEqual(true);
+
+
+
+    }
+
     function equals(){
            const b=parseInt(document.getElementsByClassName('result')[0].value);
            switch (oper) {
@@ -64,8 +74,8 @@ function Calculator(){
             <input type="text" className="result" readOnly placeholder="00000000"/>
             <div>
                 <button className="" onClick={clear}>AC</button>
-                <button className="">%</button>
-                <button className="">DLT</button>
+                <button className="percent" onClick={percent}>%</button>
+                <button className="delete">DLT</button>
                 <button className=""  onClick={operation}>/</button>
             </div>
             <div>
