@@ -39,6 +39,8 @@ function Calculator(){
 
     }
 
+    //hello in main branch
+
     function equals(){
            const b=parseFloat(document.getElementsByClassName('result')[0].value);
            switch (oper) {
@@ -108,5 +110,7 @@ function Calculator(){
 }  
 
 export default Calculator;
+
+//bye in other branch
 
 //bye in master branch
