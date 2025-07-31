@@ -41,6 +41,12 @@ function Calculator(){
 
     //hello in main branch
 
+    function deleteResult(){
+        const str = document.getElementsByTagName('input')[0].value
+        str!=null?document.getElementsByTagName('input')[0].value = document.getElementsByTagName('input')[0].value.slice(0,-1):null;
+        
+    }
+
     function equals(){
            const b=parseFloat(document.getElementsByClassName('result')[0].value);
            switch (oper) {
@@ -77,7 +83,7 @@ function Calculator(){
             <div>
                 <button className="" onClick={clear}>AC</button>
                 <button className="percent" onClick={percent}>%</button>
-                <button className="delete">DLT</button>
+                <button className="delete" onClick={deleteResult}>DLT</button>
                 <button className=""  onClick={operation}>/</button>
             </div>
             <div>
