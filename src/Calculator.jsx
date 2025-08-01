@@ -48,7 +48,9 @@ function Calculator(){
     }
 
     function equals(){
+        
            const b=parseFloat(document.getElementsByClassName('result')[0].value);
+           //the calculations start here:
            switch (oper) {
             case '+':
                 document.getElementsByClassName('result')[0].value = a+b;
