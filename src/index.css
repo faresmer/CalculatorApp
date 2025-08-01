@@ -1,9 +1,13 @@
+body{
+  background:linear-gradient(to right , rgb(82, 82, 210),rgb(52, 184, 52));
+}
+
 .calculator{
   border: 3px solid gray;
   padding: 5px;
   border-radius: 20px;
   width:fit-content;
-  background-color: rgb(192, 192, 192);
+  background:linear-gradient(to left,rgb(146, 89, 145),rgb(220, 72, 72));
 }
 
 input{
@@ -35,3 +39,4 @@ button:hover{
 span{
   font-size: large;
 }
+
