@@ -48,7 +48,9 @@ function Calculator(){
     }
 
     function equals(){
+        
            const b=parseFloat(document.getElementsByClassName('result')[0].value);
+           if (!isNaN(a) && !isNaN(b)){
            switch (oper) {
             case '+':
                 document.getElementsByClassName('result')[0].value = a+b;
@@ -70,7 +72,7 @@ function Calculator(){
                 break;
            }
            setIsEqual(true);
-
+        }
     }
 
 
